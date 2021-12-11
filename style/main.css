@@ -31,6 +31,39 @@ html{
 
 }
 
+/* comment */
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float:left;
+    padding: 0 8px;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-harl {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 #header{
     position:fixed;
     top: 0;
@@ -169,14 +202,8 @@ html{
         /*  the band */
 #contact #members-list{
     overflow: hidden;
-    
 }
 
-#contact .member-item {
-    float:left;
-    width: 33.33333%;
-    text-align: center;
-}
 
 #contact .member-name {
     text-align: center;
@@ -222,15 +249,12 @@ html{
     /* plance  */
 .plance-list {
     overflow: hidden;
-    margin: 32px -8px 0px;
+    margin-top: 32px;
+    margin-bottom:  48px;
     
 }
 
-.plance-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0px  8px;
-}
+
 
 .plance-img {
     width: 100%;
@@ -253,7 +277,7 @@ html{
     font-size: 15px;
 }
 
-.plance-time {
+.plance-timember {
     opacity: 0.6;
 }
 
@@ -399,8 +423,40 @@ html{
 
 }
 
+.CONTACT-CONTENT {
+    margin-top: 48px;
+}
+ .contact-info {
+     font-size: 18px;
+     line-height: 1.5;
+ }
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+  }
 
+.contact-form {
+    font-size: 15px;
+    
+}
 
+.contact-form .form-contact {
+    padding: 10px;
+    border: 1px solid  #ccc;
+    width: 100%;
+    margin-top: 15px;
+   
+}
+
+.contact-form .sutmit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    float: right;
+   
+}
       /*----------- footer -----------*/
 #foote {
 
