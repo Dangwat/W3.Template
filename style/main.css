@@ -74,7 +74,6 @@ html{
     height: 46px;
     background: #000;
     z-index: 1;
-    overflow: hidden;
 }
 
 
@@ -491,6 +490,7 @@ html{
 
     /* phone */
 @media (max-width:740px) {
+
     #contact .contac-section {
         margin: 0 16px;
         padding: 64px 0px;
@@ -504,8 +504,27 @@ html{
         width: 100%;
     }
     
+
+    #header {
+        overflow: hidden;
+        
+    }
+
     #nav > li {
         display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 21px 48px;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
     }
 
     #header .search-btn {
@@ -519,9 +538,15 @@ html{
         padding: 12px 24px;
         color: white;
         font-size: 14px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .iconmenu:hover {
         opacity: 0.6;
+    }
+    #nav {
+        display: block;
     }
 
 }
