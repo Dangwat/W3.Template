@@ -499,11 +499,16 @@ html{
     #footer p {
         font-size: 22px;
     }
+
+    
 }
         /* Table */
 @media (min-width:46.25em) and (max-width:63.9375em){
     #contact .contac-section {
         margin: 0 16px;
+    }
+    .fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
     }
     
 }
